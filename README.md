@@ -1,35 +1,25 @@
-## Homebrews
+# MacOS Setup
 
-```
-brew install wget
-brew install neofetch
-brew install btop
-brew install htop
-```
+## Systems
 
+- M1 mini: m1, 8gb, 256gb, 1tb nvme via dock
+- M4 mbp: m4 pro, 24gb, 512gb
 
-## Python Pips
-```
-pip3 install netaddr
-pip3 install paramiko
-pip3 install netmiko
-pip3 install requests
-pip3 install flask
-pip3 install gunicorn
-pip3 install gitpython
-```
+## Initial setup
 
-## Misc
-```
-1Password
-Spotify
-Discord
-Visual Studio Code
-Obsidian
-Alfred
-Stats
-GNS3
-Steam
-Ariel Companion
+- Install homebrew: ``/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"``
+- Add brew to path: ``echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.bash_profile && source ~/.bash_profile``
+- Install tabby (my preferred terminal): ``brew install --cask tabby``
 
-```
+## Install brews
+
+brew install htop vim git curl macmon stats tailscale uv python python-pip coreutils jq ansible btop
+brew install --cask firefox obsidian discord visual-studio-code 1password appcleaner hiddenbar microsoft-word microsoft-excel raycast
+
+### App Descriptions
+
+- clop: compression
+- raycast: alfred alternative
+- uv: pip+venv alternative
+- macmon: htop+btop alternative
+- coreutils: GNU File, Shell, and Text utilities
